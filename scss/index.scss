@@ -1,5 +1,36 @@
 @use 'normalize';
+@use 'mixins';
+$color-primary: #2584ff;
+$color-secondary: #00d9ff;
+$color-accent: #ff3400;
+// $color: #210e6b;
+$color-headings: #1b0760;
+$color-body: #918ca4;
+html {
+    font-size: 62.5%;
+}
 
-body {
-    background-color: gold;
+.btn {
+    outline: none;
+    border-radius: 25%;
+    border: 0;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar__list {
+    list-style: none;
+    flex-direction: column;
+    display: flex;
+    color: white;
+}
+
+.navbar__link {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline;
 }
