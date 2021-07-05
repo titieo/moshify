@@ -1,4 +1,5 @@
 @use 'normalize';
+// Variables
 $color-primary: #2584ff;
 $color-secondary: #00d9ff;
 $color-accent: #ff3400;
@@ -6,7 +7,12 @@ $color-accent: #ff3400;
 $color-headings: #1b0760;
 $color-body: #918ca4;
 $headings: 3;
-@use 'mixins';
+
+// Mixins
+@mixin size($height: 100vh, $width: $height) {
+    height: $height;
+    width: $width;
+}
 //  Typhography
 html {
     font-size: 62.5%;
@@ -143,15 +149,31 @@ a {
     }
 }
 
+// Icons
+.icon {
+    @include size(40px);
+}
+.icon--primary {
+    fill: $color-primary;
+}
+.icon-container {
+    @include size(64px);
+    align-items: center;
+    background: #f3f9fa;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
 // Navbar
 .navbar {
     background-color: #000;
 }
 
 .navbar__list {
-    flex-direction: column;
-    display: flex;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar__link {
