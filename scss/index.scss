@@ -110,6 +110,7 @@ a {
     }
     &--small {
         font-size: 1.6rem;
+        padding: 0.5rem 1.5rem;
     }
 }
 
@@ -157,6 +158,7 @@ a {
         background-color: $color-secondary;
         color: #fff;
     }
+
     &--secondary:hover {
         background-color: darken($color-secondary, 10%);
     }
@@ -254,6 +256,104 @@ a {
         font-size: 1.5rem;
     }
 }
+
+// Cards
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+    &__header,
+    &__body {
+        padding: 2rem 3rem;
+    }
+    &--primary &__header {
+        background-color: $color-primary;
+        color: #fff;
+    }
+    &--secondary &__header {
+        color: #fff;
+        background-color: $color-secondary;
+    }
+    &--secondary .badge--secondary {
+        background-color: #02cdf1;
+    }
+}
+
+// Plans
+// .card {
+//     &__header {
+//     }
+// }
+.plan {
+    &__name {
+        color: #fff;
+        margin: 0;
+        font-weight: 500;
+        font-size: 2.4rem;
+    }
+    &__price {
+        font-size: 6rem;
+    }
+    &__billing-cycle {
+        opacity: 0.8;
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin-right: 1rem;
+    }
+    &__description {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        display: block;
+    }
+    .list__item {
+        margin-bottom: 2rem;
+    }
+    &--popular .card__header {
+        position: relative;
+    }
+    &--popular .card__header::before {
+        content: url(../images/popular.svg);
+        width: 40px;
+        display: inline-block;
+        position: absolute;
+        top: -6px;
+        right: 5%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .plan {
+        &__name {
+            font-size: 1.4rem;
+        }
+        &__price {
+            font-size: 5rem;
+        }
+        &__billing-cycle {
+            font-size: 1.6rem;
+        }
+        &__description {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+// Media
+.media {
+    display: flex;
+    &__image {
+        margin-top: 1rem;
+    }
+    &__body {
+        margin: 0 2rem;
+    }
+    &__title {
+        margin-top: 0;
+    }
+}
+
+// Quotes
+
 // Navbar
 .navbar {
     background-color: #000;
