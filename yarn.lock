@@ -15,6 +15,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@squoosh/lib@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@squoosh/lib@npm:0.3.1"
+  dependencies:
+    web-streams-polyfill: ^3.0.3
+  checksum: a11dda9565294f3f10d8d77cc3975f98752f6440df2f50e6a80b7f297668687823249fe93aee460f73722c1f16863ed51c3f8347e27ded78b7ebba6620865631
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -712,6 +721,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "mosify@workspace:."
   dependencies:
+    "@squoosh/lib": ^0.3.1
     cross-env: ^7.0.3
     sass: ^1.35.1
     vite: ^2.3.8
@@ -1183,6 +1193,13 @@ resolve@^1.20.0:
   bin:
     vite: bin/vite.js
   checksum: acbf893f19d9d3f544506bee3869f8ce355e7fb86c7dacedcb3fc7740328f25cb2007b0266ebab75180909dc435be0d18a48c7c320987f8a2aa2f837bbaea521
+  languageName: node
+  linkType: hard
+
+"web-streams-polyfill@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "web-streams-polyfill@npm:3.0.3"
+  checksum: e7e0bc4410d89b29a7cece265a907b597ba8dd1681f497efd7c418cfde51d2ef5197310d0b3bcf291262da364a17846eb90c48857c4697c07e31a282a8aaba5a
   languageName: node
   linkType: hard
 
